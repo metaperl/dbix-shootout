@@ -1,3 +1,3 @@
 source ../../config.bashrc
-export SAKILA=$SHOOTOUT/lib/Sakila
+export SAKILA=$SHOOTOUT/lib/Sakila/
 

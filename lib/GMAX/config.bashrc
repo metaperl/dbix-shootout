@@ -1,3 +1,3 @@
 source ../../config.bashrc
-export GMAX=$SHOOTOUT/lib/GMAX
+export GMAX=${SHOOTOUT}lib/GMAX
 

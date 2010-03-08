@@ -1,3 +1,4 @@
-export SHOOTOUT=/home/tbrannon/prg/DBIx--Shootout
+export SHOOTOUT=/home/tbrannon/prg/dbix-shootout/
+
 
 

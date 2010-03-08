@@ -3,13 +3,12 @@ package Sakila::DBH;
 use warnings;
 use strict;
 
-my $dbfile = "$ENV{SAKILA}/schema.sqlite3";
 
 our %c = 
   (
-   dsn => "dbi:SQLite:$dbfile",
-   user => '',
-   pass => ''
+   dsn => "dbi:mysql:database=sakila;host=localhost;port=3306",
+   user => 'perluser',
+   pass => 'shoot1'
   );
 
 
@@ -17,7 +16,8 @@ sub dbh {
 
     use DBI;
 
-    my $dbh = DBI->connect( $c{dsn}, '', '', { RaiseError => 1 } ) ;
+    warn "my dbh = DBI->connect( $c{dsn}, $c{user}, $c{pass}, { RaiseError => 1 } ) ;" ;
+    my $dbh = DBI->connect( $c{dsn}, $c{user}, $c{pass}, { RaiseError => 1 } ) ;
 
 }
 

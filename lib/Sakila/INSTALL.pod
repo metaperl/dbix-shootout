@@ -1,0 +1,17 @@
+=head1 NAME
+
+lib/Sakila/INSTALL.pod  -- docs on how to install MySQL's Sakila database for the shootout
+
+=head1 DESCRIPTION
+
+=head2 Install MySQL
+
+Simply follow the instructions
+at L<http://dev.mysql.com/downloads/>
+
+=head2 Install Sakila into MySQL
+
+Simply follow the instructions
+at L<http://dev.mysql.com/doc/sakila/en/sakila.html#sakila-installation>
+
+
