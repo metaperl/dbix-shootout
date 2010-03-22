@@ -10,12 +10,12 @@ use strict;
 use warnings;
 
 
-my $dump_dir="$ENV{Sakila}/DBIx/Class";
+my $dump_dir="$ENV{SAKILA}/DBIx/Class";
 my $c = Sakila::DBH::connect_data;
 
 make_schema_at 
   ( 
-   'SakSchema',
+   'Sakila',
    {
     debug => 1, 
     dump_directory => $dump_dir,

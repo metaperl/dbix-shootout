@@ -12,6 +12,8 @@ at L<http://dev.mysql.com/downloads/>
 =head2 Install Sakila into MySQL
 
 Simply follow the instructions
-at L<http://dev.mysql.com/doc/sakila/en/sakila.html#sakila-installation>
+at L<http://dev.mysql.com/doc/sakila/en/sakila.html#sakila-installation>. Be 
+sure to append the semicolon at the end of the C<SOURCE> statements.
+
 
 

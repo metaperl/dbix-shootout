@@ -6,18 +6,18 @@ use lib "$ENV{SHOOTOUT}/lib";
 use lib "$ENV{SAKILA}";
 use lib "$ENV{SAKILA}/DBIx/Class";
 
-use SakSchema; 
+use Sakila; 
 
 
-use Sakila::DBH::MySQL;
+use Sakila::DBH;
 
-my $schema = SakSchema->connect
+my $schema = Sakila->connect
   (
-   sub { Sakila::DBH::MySQL::dbh }
+   sub { Sakila::DBH::dbh }
   );
 
 
-
+# SELECT * FROM Actor
 sub fetch_all {
     my $rs = $schema->resultset('Actor')->search;
     while (my $row = $rs->next) {
@@ -28,6 +28,8 @@ sub fetch_all {
     }
 }
 
+# get a single row by primary key
+# SELECT * FROM Actor WHERE actor_id=199
 sub fetch_julia {
 
     my $row = $schema->resultset('Actor')->find(199);
@@ -36,6 +38,8 @@ sub fetch_julia {
     warn Dumper(\%data);
 }
 
+# SELECT * FROM Customer c INNER JOIN Payment USING (customer_id) WHERE 
+# c.customer_id=599
 sub prefetch {
 
     my $rs = $schema->resultset('Customer')->search
@@ -49,5 +53,6 @@ sub prefetch {
     }
 }
 
+#fetch_all;
 #fetch_julia;
 prefetch;

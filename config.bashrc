@@ -1,4 +1,4 @@
-export SHOOTOUT=/home/tbrannon/prg/dbix-shootout/
+export SHOOTOUT=/home/metaperl/prg/dbix-shootout/
 
 
 

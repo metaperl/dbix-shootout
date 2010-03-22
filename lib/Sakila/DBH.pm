@@ -7,8 +7,8 @@ use strict;
 our %c = 
   (
    dsn => "dbi:mysql:database=sakila;host=localhost;port=3306",
-   user => 'perluser',
-   pass => 'shoot1'
+   user => 'shootout',
+   pass => 'shootout1'
   );
 
 
