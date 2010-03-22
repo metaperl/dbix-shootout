@@ -53,6 +53,21 @@ sub pre_11 {
     }
 }
 
+# complex where
+
+sub cw {
+
+  my $where = { 'country.country' => { like => 'Ang%' } } ;
+  my $attr  = { join => 'country' } ;
+
+  my $rs = $schema->resultset('City')->search($where, $attr);
+
+    while (my $row = $rs->next) {
+	warn $row->store->address_id ;
+    }
+}
+
+
 
 # 1:n relationship
 # SELECT * FROM Customer c INNER JOIN Payment USING (customer_id) WHERE c.customer_id=599 
