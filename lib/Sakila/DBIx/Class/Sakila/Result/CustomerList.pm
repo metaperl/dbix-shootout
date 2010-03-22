@@ -23,7 +23,7 @@ __PACKAGE__->table("customer_list");
 
   data_type: SMALLINT
   default_value: 0
-  extra: HASH(0xa3cb098)
+  extra: HASH(0xa2ff958)
   is_nullable: 0
   size: 5
 
@@ -80,7 +80,7 @@ __PACKAGE__->table("customer_list");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa252120)
+  extra: HASH(0xa2f5560)
   is_nullable: 0
   size: 3
 
@@ -145,8 +145,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:jThhK/C6Pr8rvq9Cooz4Mw
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:gnpys6x1C3vEnptOLUbhxw
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

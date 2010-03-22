@@ -16,7 +16,7 @@ sub dbh {
 
     use DBI;
 
-    warn "my dbh = DBI->connect( $c{dsn}, $c{user}, $c{pass}, { RaiseError => 1 } ) ;" ;
+    #warn "my dbh = DBI->connect( $c{dsn}, $c{user}, $c{pass}, { RaiseError => 1 } ) ;" ;
     my $dbh = DBI->connect( $c{dsn}, $c{user}, $c{pass}, { RaiseError => 1 } ) ;
 
 }

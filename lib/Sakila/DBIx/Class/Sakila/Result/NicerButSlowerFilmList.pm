@@ -23,7 +23,7 @@ __PACKAGE__->table("nicer_but_slower_film_list");
 
   data_type: SMALLINT
   default_value: 0
-  extra: HASH(0xa3c62f0)
+  extra: HASH(0xa2f61d0)
   is_nullable: 1
   size: 5
 
@@ -59,7 +59,7 @@ __PACKAGE__->table("nicer_but_slower_film_list");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3c2bf0)
+  extra: HASH(0xa2f6e90)
   is_nullable: 1
   size: 5
 
@@ -67,7 +67,7 @@ __PACKAGE__->table("nicer_but_slower_film_list");
 
   data_type: ENUM
   default_value: G
-  extra: HASH(0xa3c1388)
+  extra: HASH(0xa303fc8)
   is_nullable: 1
   size: 5
 
@@ -143,8 +143,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:VelM2kjMZG01+NW2dKl7Mg
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:k9i4YT5OccajgcYZdj+mtw
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

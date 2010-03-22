@@ -23,7 +23,7 @@ __PACKAGE__->table("inventory");
 
   data_type: MEDIUMINT
   default_value: undef
-  extra: HASH(0xa3c3140)
+  extra: HASH(0xa2ec6a8)
   is_auto_increment: 1
   is_nullable: 0
   size: 8
@@ -32,7 +32,7 @@ __PACKAGE__->table("inventory");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3d05c0)
+  extra: HASH(0xa304338)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -41,7 +41,7 @@ __PACKAGE__->table("inventory");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3c31f0)
+  extra: HASH(0xa2ffcc8)
   is_foreign_key: 1
   is_nullable: 0
   size: 3
@@ -95,6 +95,16 @@ __PACKAGE__->set_primary_key("inventory_id");
 
 =head1 RELATIONS
 
+=head2 film
+
+Type: belongs_to
+
+Related object: L<Sakila::Result::Film>
+
+=cut
+
+__PACKAGE__->belongs_to("film", "Sakila::Result::Film", { film_id => "film_id" }, {});
+
 =head2 store
 
 Type: belongs_to
@@ -109,16 +119,6 @@ __PACKAGE__->belongs_to(
   { store_id => "store_id" },
   {},
 );
-
-=head2 film
-
-Type: belongs_to
-
-Related object: L<Sakila::Result::Film>
-
-=cut
-
-__PACKAGE__->belongs_to("film", "Sakila::Result::Film", { film_id => "film_id" }, {});
 
 =head2 rentals
 
@@ -135,8 +135,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:XMUKKNcVX1d4NVP8XQO0sA
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:HuSxN4rW45JOxmMZD4TerQ
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

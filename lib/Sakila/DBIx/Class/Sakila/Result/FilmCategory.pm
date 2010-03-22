@@ -23,7 +23,7 @@ __PACKAGE__->table("film_category");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3cb318)
+  extra: HASH(0xa2ffbd8)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -32,7 +32,7 @@ __PACKAGE__->table("film_category");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3c6e60)
+  extra: HASH(0xa2f0ab8)
   is_foreign_key: 1
   is_nullable: 0
   size: 3
@@ -77,16 +77,6 @@ __PACKAGE__->set_primary_key("film_id", "category_id");
 
 =head1 RELATIONS
 
-=head2 film
-
-Type: belongs_to
-
-Related object: L<Sakila::Result::Film>
-
-=cut
-
-__PACKAGE__->belongs_to("film", "Sakila::Result::Film", { film_id => "film_id" }, {});
-
 =head2 category
 
 Type: belongs_to
@@ -102,9 +92,19 @@ __PACKAGE__->belongs_to(
   {},
 );
 
+=head2 film
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:UKkdnlIf8teTJqwEoA1ytg
+Type: belongs_to
+
+Related object: L<Sakila::Result::Film>
+
+=cut
+
+__PACKAGE__->belongs_to("film", "Sakila::Result::Film", { film_id => "film_id" }, {});
+
+
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:ryqS1TbUh3k8AkEihlwNYw
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

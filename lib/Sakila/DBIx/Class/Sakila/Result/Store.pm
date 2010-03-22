@@ -23,7 +23,7 @@ __PACKAGE__->table("store");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3d0a70)
+  extra: HASH(0xa3049b8)
   is_auto_increment: 1
   is_nullable: 0
   size: 3
@@ -32,7 +32,7 @@ __PACKAGE__->table("store");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3bc5d8)
+  extra: HASH(0xa30b510)
   is_foreign_key: 1
   is_nullable: 0
   size: 3
@@ -41,7 +41,7 @@ __PACKAGE__->table("store");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3d8378)
+  extra: HASH(0xa2ec6e8)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -138,21 +138,6 @@ __PACKAGE__->has_many(
   { "foreign.store_id" => "self.store_id" },
 );
 
-=head2 manager_staff
-
-Type: belongs_to
-
-Related object: L<Sakila::Result::Staff>
-
-=cut
-
-__PACKAGE__->belongs_to(
-  "manager_staff",
-  "Sakila::Result::Staff",
-  { staff_id => "manager_staff_id" },
-  {},
-);
-
 =head2 address
 
 Type: belongs_to
@@ -168,9 +153,24 @@ __PACKAGE__->belongs_to(
   {},
 );
 
+=head2 manager_staff
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:/spK3TiffE77KxrVTeEX6A
+Type: belongs_to
+
+Related object: L<Sakila::Result::Staff>
+
+=cut
+
+__PACKAGE__->belongs_to(
+  "manager_staff",
+  "Sakila::Result::Staff",
+  { staff_id => "manager_staff_id" },
+  {},
+);
+
+
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:nBCvtKIaEO5Yjz0kF17deA
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

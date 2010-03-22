@@ -23,7 +23,7 @@ __PACKAGE__->table("film");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3cb5e8)
+  extra: HASH(0xa2ffea8)
   is_auto_increment: 1
   is_nullable: 0
   size: 5
@@ -53,7 +53,7 @@ __PACKAGE__->table("film");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3c6350)
+  extra: HASH(0xa2f6ab0)
   is_foreign_key: 1
   is_nullable: 0
   size: 3
@@ -62,7 +62,7 @@ __PACKAGE__->table("film");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3cb008)
+  extra: HASH(0xa2ff5d8)
   is_foreign_key: 1
   is_nullable: 1
   size: 3
@@ -71,7 +71,7 @@ __PACKAGE__->table("film");
 
   data_type: TINYINT
   default_value: 3
-  extra: HASH(0xa3caa98)
+  extra: HASH(0xa2f5200)
   is_nullable: 0
   size: 3
 
@@ -86,7 +86,7 @@ __PACKAGE__->table("film");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3c1af8)
+  extra: HASH(0xa2f5ff0)
   is_nullable: 1
   size: 5
 
@@ -101,7 +101,7 @@ __PACKAGE__->table("film");
 
   data_type: ENUM
   default_value: G
-  extra: HASH(0xa3cacd8)
+  extra: HASH(0xa2ff428)
   is_nullable: 1
   size: 5
 
@@ -109,7 +109,7 @@ __PACKAGE__->table("film");
 
   data_type: SET
   default_value: undef
-  extra: HASH(0xa3cb0a8)
+  extra: HASH(0xa2ff968)
   is_nullable: 1
   size: 54
 
@@ -304,8 +304,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:5D6tdnM1Y/RKe5UQBaItEQ
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:wKuKU2ORoonqYRqMt9gPpQ
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

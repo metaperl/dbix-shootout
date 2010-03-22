@@ -23,7 +23,7 @@ __PACKAGE__->table("country");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3c3520)
+  extra: HASH(0xa2f6dc0)
   is_auto_increment: 1
   is_nullable: 0
   size: 5
@@ -88,8 +88,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:eY+TG7BEdLpDGyfd/FkM2w
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:HazJP0Z96Ab1Te3rHjkv6w
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

@@ -23,7 +23,7 @@ __PACKAGE__->table("staff_list");
 
   data_type: TINYINT
   default_value: 0
-  extra: HASH(0xa3db1e8)
+  extra: HASH(0xa30c0c0)
   is_nullable: 0
   size: 3
 
@@ -73,7 +73,7 @@ __PACKAGE__->table("staff_list");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3d9208)
+  extra: HASH(0xa30b600)
   is_nullable: 0
   size: 3
 
@@ -136,8 +136,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:apyIN5THE8lq4usDyeZjkA
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:3mEtOWF3yk80++x4vAHkaQ
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

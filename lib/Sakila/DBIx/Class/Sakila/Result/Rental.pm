@@ -38,7 +38,7 @@ __PACKAGE__->table("rental");
 
   data_type: MEDIUMINT
   default_value: undef
-  extra: HASH(0xa3d10f0)
+  extra: HASH(0xa2ff428)
   is_foreign_key: 1
   is_nullable: 0
   size: 8
@@ -47,7 +47,7 @@ __PACKAGE__->table("rental");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3c6aa0)
+  extra: HASH(0xa2f6e20)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -63,7 +63,7 @@ __PACKAGE__->table("rental");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3c6550)
+  extra: HASH(0xa2f1138)
   is_foreign_key: 1
   is_nullable: 0
   size: 3
@@ -154,18 +154,18 @@ __PACKAGE__->has_many(
   { "foreign.rental_id" => "self.rental_id" },
 );
 
-=head2 staff
+=head2 customer
 
 Type: belongs_to
 
-Related object: L<Sakila::Result::Staff>
+Related object: L<Sakila::Result::Customer>
 
 =cut
 
 __PACKAGE__->belongs_to(
-  "staff",
-  "Sakila::Result::Staff",
-  { staff_id => "staff_id" },
+  "customer",
+  "Sakila::Result::Customer",
+  { customer_id => "customer_id" },
   {},
 );
 
@@ -184,24 +184,24 @@ __PACKAGE__->belongs_to(
   {},
 );
 
-=head2 customer
+=head2 staff
 
 Type: belongs_to
 
-Related object: L<Sakila::Result::Customer>
+Related object: L<Sakila::Result::Staff>
 
 =cut
 
 __PACKAGE__->belongs_to(
-  "customer",
-  "Sakila::Result::Customer",
-  { customer_id => "customer_id" },
+  "staff",
+  "Sakila::Result::Staff",
+  { staff_id => "staff_id" },
   {},
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:uP4h+ytkXbNkI70t3wYfXA
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:TpddiTdHBrQJhA1API8ASg
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

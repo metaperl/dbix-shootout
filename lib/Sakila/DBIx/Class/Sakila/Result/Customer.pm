@@ -23,7 +23,7 @@ __PACKAGE__->table("customer");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3bc748)
+  extra: HASH(0xa2f0ff8)
   is_auto_increment: 1
   is_nullable: 0
   size: 5
@@ -32,7 +32,7 @@ __PACKAGE__->table("customer");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3b8a78)
+  extra: HASH(0xa2f0c98)
   is_foreign_key: 1
   is_nullable: 0
   size: 3
@@ -62,7 +62,7 @@ __PACKAGE__->table("customer");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3b85a8)
+  extra: HASH(0xa2ec928)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -219,8 +219,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:sFnv7KFOU/1a2sZQkncSwA
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:9QAKN4uP+wgsJzsruQALNQ
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

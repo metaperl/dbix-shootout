@@ -23,7 +23,7 @@ __PACKAGE__->table("city");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3bc218)
+  extra: HASH(0xa2b3a10)
   is_auto_increment: 1
   is_nullable: 0
   size: 5
@@ -39,7 +39,7 @@ __PACKAGE__->table("city");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3c61b0)
+  extra: HASH(0xa2f91d8)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -121,8 +121,8 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:FfdJmJxeKQxn2NFgp3xqQQ
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:6WJQwZ6gzdPgSySYeTMBaA
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

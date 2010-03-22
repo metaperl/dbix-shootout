@@ -23,7 +23,7 @@ __PACKAGE__->table("payment");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3cac18)
+  extra: HASH(0xa2f0eb8)
   is_auto_increment: 1
   is_nullable: 0
   size: 5
@@ -32,7 +32,7 @@ __PACKAGE__->table("payment");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3cb6b8)
+  extra: HASH(0xa2ffaf8)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -41,7 +41,7 @@ __PACKAGE__->table("payment");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3c1af8)
+  extra: HASH(0xa2f54e0)
   is_foreign_key: 1
   is_nullable: 0
   size: 3
@@ -134,21 +134,6 @@ __PACKAGE__->set_primary_key("payment_id");
 
 =head1 RELATIONS
 
-=head2 rental
-
-Type: belongs_to
-
-Related object: L<Sakila::Result::Rental>
-
-=cut
-
-__PACKAGE__->belongs_to(
-  "rental",
-  "Sakila::Result::Rental",
-  { rental_id => "rental_id" },
-  { join_type => "LEFT" },
-);
-
 =head2 customer
 
 Type: belongs_to
@@ -162,6 +147,21 @@ __PACKAGE__->belongs_to(
   "Sakila::Result::Customer",
   { customer_id => "customer_id" },
   {},
+);
+
+=head2 rental
+
+Type: belongs_to
+
+Related object: L<Sakila::Result::Rental>
+
+=cut
+
+__PACKAGE__->belongs_to(
+  "rental",
+  "Sakila::Result::Rental",
+  { rental_id => "rental_id" },
+  { join_type => "LEFT" },
 );
 
 =head2 staff
@@ -180,8 +180,8 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:rQyA4qnOH9ZbBDpAErN/hg
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:YVcKZo4UCXViqTVvGpPOkQ
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

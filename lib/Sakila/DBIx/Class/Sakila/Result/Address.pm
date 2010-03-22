@@ -23,7 +23,7 @@ __PACKAGE__->table("address");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3c1aa8)
+  extra: HASH(0xa2f5190)
   is_auto_increment: 1
   is_nullable: 0
   size: 5
@@ -53,7 +53,7 @@ __PACKAGE__->table("address");
 
   data_type: SMALLINT
   default_value: undef
-  extra: HASH(0xa3c16e8)
+  extra: HASH(0xa2f4dd0)
   is_foreign_key: 1
   is_nullable: 0
   size: 5
@@ -200,8 +200,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:rJ24x9qxmJYV4pd+gZUjYA
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:4Fu5iq+zIZu4qSIWAThNjQ
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

@@ -23,7 +23,7 @@ __PACKAGE__->table("language");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3c1eb8)
+  extra: HASH(0xa2f4f30)
   is_auto_increment: 1
   is_nullable: 0
   size: 3
@@ -97,8 +97,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:XtQuhnIM+NS+0SNChVG7mw
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:NN8jB1n9Kj3SNyc6P9mwMA
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

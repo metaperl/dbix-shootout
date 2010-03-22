@@ -23,7 +23,7 @@ __PACKAGE__->table("category");
 
   data_type: TINYINT
   default_value: undef
-  extra: HASH(0xa3c2e20)
+  extra: HASH(0xa2f8fc8)
   is_auto_increment: 1
   is_nullable: 0
   size: 3
@@ -88,8 +88,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:e+Xv99+lgHnf7bxgw+kmCw
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:g58M4SwaKbSU0L4oqswJgg
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

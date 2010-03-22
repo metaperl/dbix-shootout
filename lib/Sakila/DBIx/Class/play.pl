@@ -38,9 +38,26 @@ sub fetch_julia {
     warn Dumper(\%data);
 }
 
-# SELECT * FROM Customer c INNER JOIN Payment USING (customer_id) WHERE 
-# c.customer_id=599
-sub prefetch {
+# 1:1 relationship
+
+sub pre_11 {
+
+  my $rs = $schema->resultset('Staff')->search
+      (
+       { 'me.staff_id' => 2 },
+       { prefetch => [ 'store' ] }
+      );
+
+    while (my $row = $rs->next) {
+	warn $row->store->address_id ;
+    }
+}
+
+
+# 1:n relationship
+# SELECT * FROM Customer c INNER JOIN Payment USING (customer_id) WHERE c.customer_id=599 
+# DOES NOT WORK
+sub pre_1n {
 
     my $rs = $schema->resultset('Customer')->search
       (
@@ -49,10 +66,11 @@ sub prefetch {
       );
 
     while (my $row = $rs->next) {
-	warn $row->payments->payment_id;
+	warn $row->payment_id ;
     }
 }
 
 #fetch_all;
 #fetch_julia;
-prefetch;
+pre_11;
+#prefetch;

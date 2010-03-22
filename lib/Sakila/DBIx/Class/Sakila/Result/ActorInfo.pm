@@ -23,7 +23,7 @@ __PACKAGE__->table("actor_info");
 
   data_type: SMALLINT
   default_value: 0
-  extra: HASH(0xa3c1428)
+  extra: HASH(0xa2f4b10)
   is_nullable: 0
   size: 5
 
@@ -83,8 +83,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-17 16:30:08
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:8pBGdrPWX8n/e8kr36k9AQ
+# Created by DBIx::Class::Schema::Loader v0.05003 @ 2010-03-22 17:34:29
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:mKS7Pr2rt3TUoxtM/opckA
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration
