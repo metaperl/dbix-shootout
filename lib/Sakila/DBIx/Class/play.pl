@@ -129,6 +129,24 @@ sub update_2 {
   $lang_rs->update({ name => 'Apple' });
 }
 
+sub delete_one_row {
+  my($new_lang)=@_;
+
+  my $lang_rs = $schema->resultset('Language')->find(2);
+  $lang_rs->delete;
+}
+
+sub delete_multi_rows {
+  my($new_lang)=@_;
+
+  my $lang_rs = $schema->resultset('Language')->search
+    ({
+      language_id => { '>=' , 6 }
+     });
+
+  $lang_rs->delete; # delete_all for cascading delete
+}
+
 
 
 #fetch_all;
@@ -138,4 +156,6 @@ sub update_2 {
 #add_language('Perl');
 #add_language_2('Prolog');
 #update_1('Scheme');
-update_2;
+#update_2;
+#delete_one_row;
+delete_multi_rows;
