@@ -53,21 +53,6 @@ sub pre_11 {
     }
 }
 
-# complex where
-
-sub cw {
-
-  my $where = { 'country.country' => { like => 'Ang%' } } ;
-  my $attr  = { join => 'country' } ;
-
-  my $rs = $schema->resultset('City')->search($where, $attr);
-
-    while (my $row = $rs->next) {
-	warn $row->store->address_id ;
-    }
-}
-
-
 
 # 1:n relationship
 # SELECT * FROM Customer c INNER JOIN Payment USING (customer_id) WHERE c.customer_id=599 
@@ -85,7 +70,72 @@ sub pre_1n {
     }
 }
 
+# complex where
+
+sub cw {
+
+  my $where = { 'country.country' => { like => 'Ang%' } } ;
+  my $attr  = { join => 'country' } ;
+
+  my $rs = $schema->resultset('City')->search($where, $attr);
+
+    while (my $row = $rs->next) {
+	warn $row->store->address_id ;
+    }
+}
+
+# ----------------------- Create ------------------------
+
+sub add_language {
+  my($lang)=@_;
+
+  my $lang_rs = $schema->resultset('Language');
+  $lang_rs->create
+    ({
+      name => 'Perl'
+     });
+}
+
+sub add_language_2 {
+  my($lang)=@_;
+
+  my $lang_rs = $schema->resultset('Language');
+  my $lang_row = $lang_rs->new({ name => $lang });
+  $lang_row->insert;
+}
+
+sub update_1 {
+  my($new_lang)=@_;
+
+  my $lang_row = $schema->resultset('Language')->find(3);
+  $lang_row->name($new_lang);
+  $lang_row->update;
+}
+
+sub update_1a {
+  my($new_lang)=@_;
+
+  my $lang_row = $schema->resultset('Language')->find(4);
+  $lang_row->update({name => $new_lang});
+}
+
+sub update_2 {
+  my($new_lang)=@_;
+
+  my $lang_rs = $schema->resultset('Language')->search
+    ({
+      name => { like => 'P%' }
+     });
+  $lang_rs->update({ name => 'Apple' });
+}
+
+
+
 #fetch_all;
 #fetch_julia;
-pre_11;
+#pre_11;
 #prefetch;
+#add_language('Perl');
+#add_language_2('Prolog');
+#update_1('Scheme');
+update_2;
