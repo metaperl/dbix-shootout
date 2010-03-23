@@ -2,7 +2,10 @@ package Sakila::DBIx::Class::App;
 use Moose;
 extends qw(MooseX::App::Cmd);
 
+
+
 has 'schema' => (is => 'rw');
+
 
 sub BUILD {
   my ($self)=@_;

@@ -2,10 +2,24 @@ package Sakila::DBIx::Class::App::Command::fetch_all;
 use Moose;
 extends qw(MooseX::App::Cmd::Command);
 
+has order_by => (
+		 traits => [qw(Getopt)],
+		 isa => "Str",
+		 is  => "rw",
+		);
+
+
 sub execute {
   my ($self, $opt, $args) = @_;
 
-  my $rs = $self->app->schema->resultset('Actor')->search;
+  my $where = {};
+  my $attr = {};
+
+  if (my $val = $opt->{order_by}) {
+    $attr->{order_by} = $val;
+  }
+
+  my $rs = $self->app->schema->resultset('Actor')->search($where, $attr);
 
   while (my $row = $rs->next) {
     use Data::Dumper;
